@@ -105,7 +105,7 @@ const displayInuse=()=>{
     inuse.style.display="block"
     var temp='';
     for(var i=0;i<inUseSize;i++){
-	temp=temp+'<a href="Leveldashboard.html?id='+inused[i]+'&bno='+room[i]+'"><b>'+inused[i]+'</b></a>'+'<a>Used in Room No: '+room[i]+'</a> <button onclick="removeInuse('+i+')">Remove</button><br>';
+	temp=temp+'<a href="leveldashboard.html?id='+inused[i]+'&bno='+room[i]+'"><b>'+inused[i]+'</b></a>'+'<a>Used in Room No: '+room[i]+'</a> <button onclick="removeInuse('+i+')">Remove</button><br>';
     }
     inuse.innerHTML = temp;
     if(inUseSize==0){
